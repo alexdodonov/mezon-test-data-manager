@@ -7,8 +7,6 @@ use Mezon\Functional\Fetcher;
 class TestDataManager
 {
 
-    // TODO move to the separate package
-
     /**
      * List of the creators
      *
