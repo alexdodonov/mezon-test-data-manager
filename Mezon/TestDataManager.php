@@ -199,7 +199,7 @@ class TestDataManager
     public static function requireEntity(string $name): int
     {
         foreach (static::$dataDescriptors as $descriptor) {
-            if (Fetcher::getField($descriptor, 'name') === $name) {
+            if (Fetcher::getField($descriptor, 'name', false) === $name) {
                 return static::createEntityByDescriptor($descriptor);
             }
         }
